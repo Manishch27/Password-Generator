@@ -58,19 +58,19 @@ const App = () => {
                 </div>
 
                 <div className='flex gap-2'>
-                <input type="checkbox" name="numbers" id="numbers" checked={Numbers} onChange={()=>setNumbers((prev)=>!prev)}/>
-                <label htmlFor="numbers">Numbers</label>
+                <input type="checkbox" name="numbers" id="numbers" checked={Numbers} onChange={()=>setNumbers((prev)=>!prev)} className='cursor-pointer'/>
+                <label htmlFor="numbers" className='cursor-pointer'>Numbers</label>
                 </div>
 
                 <div className='flex gap-2'>
-                <input type="checkbox" name="specialChar" id="specialChar" checked = {specialCharacters} onChange={()=>setSpecialCharacters((prev)=>!prev)}/>
-                <label htmlFor="specialChar">Special Characters</label>
+                <input type="checkbox" name="specialChar" id="specialChar" checked = {specialCharacters} onChange={()=>setSpecialCharacters((prev)=>!prev)}className='cursor-pointer'/>
+                <label htmlFor="specialChar" className='cursor-pointer'>Special Characters</label>
                 </div>
 
             </div>
         </div>
 
-        <button onClick={()=>generatePassword()}>Generate</button>
+        <button className='mt-16 bg-[#6528F7] px-8 py-4 rounded-lg text-white font-[roboto] font-bold active:bg-[#4D2DB7]' onClick={()=>generatePassword()}>Generate</button>
     </div>
   )
 }
