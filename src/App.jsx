@@ -48,7 +48,7 @@ const App = () => {
         <div className='bg-[#A076F9] w-1/2 rounded-xl'>
             <div className= "m-6 flex items-center">
             <input type="text" name="password" id="password" value={Password} className='outline-none p-4 w-full rounded-s-lg' readOnly ref={passwordRef}/>
-            <button className="px-8 py-4 bg-[#6528F7] rounded-e-lg text-white text-md font-[roboto] font-bold text-center tracking-wide active:bg-[#4D2DB7] delay-1000" onClick={()=>copyText()}>{Btn}</button>
+            <button className="px-8 py-4 bg-[#6528F7] rounded-e-lg text-white text-md font-[roboto] font-bold text-center tracking-wide active:bg-[#4D2DB7]" onClick={()=>copyText()}>{Btn}</button>
             </div>
 
             <div className='m-6 flex items-center gap-12 text-white font-[roboto]'>
